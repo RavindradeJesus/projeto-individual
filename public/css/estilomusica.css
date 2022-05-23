@@ -5,7 +5,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header{
-    border-bottom: 3px solid #00FF7F;
+    border-bottom: 3px solid #2c0bb0;
 }
 
 .container{
@@ -23,7 +23,7 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ul {
-    color: #7CFC00;
+    color: #06056a;
 }
  .titulo{
      color:rgb(53, 28, 150);
@@ -42,9 +42,9 @@ ul {
  }
 
  .banner{
-   background-image: url;
+   background-image:url(https://tse3.mm.bing.net/th?id=OIP.ZRvgmd5Q376FMSjVgJZDIAHaEU&pid=Api&P=0&w=288&h=167 );
    height: 400px;
-   color: rgb(6, 88, 97);
+   color: rgb(178, 175, 221);
    display: flex;
  }
 
@@ -65,8 +65,9 @@ ul {
  }
 
  .social{
-     background-color:#2acb83 ;
+     background-color:#952acb ;
      display: flex;
+     height: 700px;
  }
 
  .box img{
@@ -82,8 +83,9 @@ ul {
  .box{
      margin-top: 50px;
      display: flex;
-     flex-direction: column;
+     flex-direction:row;
      align-items: center;
+     border-radius: 10px;
  }
 
  .footer{
@@ -108,14 +110,14 @@ ul {
  }
 
  .banner .container .card{
-     background-color: rgb(0, 0, 0);
+     background-color: rgb(51, 16, 112);
      height: 500px;
      width: 500px;
      display: flex;
      flex-direction: column;
      color: #B03060;
      align-items: center;
-     border-radius: 6px;
+     border-radius: 20px;
  }
 
  .card h1{
