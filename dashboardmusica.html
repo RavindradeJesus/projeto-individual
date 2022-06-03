@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dash</title>
+    <link rel="stylesheet" href="DASHBOARD.CSS">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="main">
+		<!-- Barra de navegação lateral-->
+
+		<div class="navbar">
+			<ul>
+				<h4 class="item-navbar" id="greenName">
+					<img src="https://tse4.mm.bing.net/th?id=OIP.UxqmdX-GFYLe63M3bHx48gHaMT&pid=Api&P=0&w=90&h=150" id="logo">
+					Imusic</h4>
+				<img id='img_user' src="https://tse4.mm.bing.net/th?id=OIP.zsRdmecKVmOPxu-B_JZKfAHaEM&pid=Api&P=0&w=276&h=156" alt="" class="item-navbar">
+				<h5 class="item-navbar" id="username"> Usuário</h5>
+				<p class="item-navbar" id="cargo">Assinante plano gratuito</p>
+				
+				<li class="item-navbar" id="aqui">Início</li>
+			<a href="grafico.html">	<li class="item-navbar" >Atividade</li> </a>
+				
+			</ul>
+		</div>
+
+			<!-- Div container é tudo que ficou na parte da box -->
+
+			<div class="container">
+
+				<div class="titulos">
+				<h1>Conta do usuário</h1>
+
+				<div id="organizar-titulo">
+				<div class="metrica-bar">	
+					<div id="bola-bar-green">
+						<p> Música mais ouvida</p>
+					</div>
+					<div id="bola-bar-orange">
+						<p>Intermédiario</p>
+					</div>
+					<div id="bola-bar-red">
+						<p>Música menos ouvida</p>
+					</div>
+					
+				</div>
+
+				<!-- Colocando as métricas de forma numérica -->
+				
+				<div class="num-metrica">
+
+					<div class="num-metrica-green">
+						<p>Horas</p><p>2 </p>
+					</div>
+
+					<div class="num-metrica-green">
+						<p>Horas</p><p>1</p>
+					</div>
+
+					<div class="num-metrica-green">
+						<p>Horas</p><p>0.5</p>
+					</div>
+
+					
+				</div>
+
+			</div>
+
+			</div>
+			
+				<!--Primeiras caixas para informaçoes gerais-->
+
+				<div class="boxes">
+					<div class="box">
+						<img src="https://tse4.mm.bing.net/th?id=OIP.Rtpy-RJs7RCPBCUNXCa_aAHaEo&pid=Api&P=0&w=285&h=178">
+						<div class="text">
+						<p>Playlists mais ouvidas</p>
+						<h4 style="color: rgb(31, 185, 46);">Mix Felix</h4>
+					    </div>    
+				    </div>
+					<div class="box">
+						<img src="https://tse2.mm.bing.net/th?id=OIP.tTrrrqyOtaOnAKYHtVv8CQHaD4&pid=Api&P=0&w=308&h=161">
+						<div class="text">
+						<p>Música mais ouvida</p>
+						<h4 style="color: rgb(31, 185, 46);">Happy loner</h4>
+					    </div>
+					</div>
+					<div class="box">
+						<img src="https://tse2.mm.bing.net/th?id=OIP.tZ2Ik-6sMXKjyxeSnX9hWgHaFj&pid=Api&P=0&w=232&h=174">
+						<div class="text">
+						<p >Gênero favorito</p> 
+						<h4 style="color: rgb(31, 185, 46);">Pop</h4>
+					    </div>
+					</div>
+				</div>
+
+				<!--Div das box com os dados precisos do dashboard-->
+				<!-- Limite de caracteres da nome da estufa é 11-->
+				
+
+					<!--Fazendo a parte das informações numéricas-->
+
+					<!--Div Principal-->
+					<div class="boxes-metrica">
+
+
+						<div class="titulos"><p>Playlists</p><p>Mais ouvidas</p><p>Artista</p></div>
+
+
+						<div class="div-metrica">
+						<div class="div-estufa-name"><p style="color: rgb(23, 155, 23); font-weight: bold;">Mix Feliz</p></div>
+						<div class="temp"><p style="color: rgb(23, 155, 23); font-weight: bold;">Happy loner</p></div>
+						<div class="umidade"> <p style="color:  rgb(23, 155, 23); font-weight: bold;">MARINA</p></div>
+						</div>
+					
+
+						<div class="div-metrica">
+						<div class="div-estufa-name"><p style="color:rgb(255, 196, 0) ; font-weight: bold;">Mix Sexta</p></div>
+						<div class="temp"><p style="color: rgb(255, 196, 0); font-weight: bold;">Clocks</p></div>
+						<div class="umidade"> <p style="color:rgb(255, 196, 0) ; font-weight: bold;">Coldplay</p></div>
+						</div>
+					
+						<div class="div-metrica">
+						<div class="div-estufa-name"><p style="color:rgb(255, 196, 0) ; font-weight: bold;">Mix Sad</p></div>
+						<div class="temp"><p style="color:rgb(255, 196, 0) ; font-weight: bold;">Sad Girl</p></div>
+						<div class="umidade"> <p style="color:rgb(255, 196, 0) ; font-weight: bold;">Lana del Rey</p></div>
+						</div>
+
+						<div class="div-metrica">
+						<div class="div-estufa-name"><p style="color:rgb(255, 38, 0) ; font-weight: bold;">Mix Festa</p></div>
+						<div class="temp"><p  style="color:rgb(255, 38, 0) ; font-weight: bold;">Bye Bye</p></div>
+						<div class="umidade"> <p  style="color:rgb(255, 38, 0) ; font-weight: bold;">Juju</p></div>
+						</div>
+
+						<div class="div-metrica">
+						<div class="div-estufa-name"><p style="color:rgb(255, 196, 0) ; font-weight: bold;">Mix Aquario</p></div>
+						<div class="temp"><p style="color:rgb(255, 196, 0) ; font-weight: bold;">So am i</p></div>
+						<div class="umidade"> <p style="color:rgb(255, 196, 0) ; font-weight: bold;">Ava Max</p></div>
+						</div>
+
+						<div class="div-metrica">
+						<div class="div-estufa-name"><p style="color:rgb(255, 196, 0) ; font-weight: bold;">Mix anos 90</p></div>
+						<div class="temp"><p style="color:rgb(255, 196, 0) ; font-weight: bold;">Believe</p></div>
+						<div class="umidade"> <p style="color:rgb(255, 196, 0) ; font-weight: bold;">Cher</p></div>
+						</div>
+
+						
+						
+
+
+							
+					
+						</div>
+
+
+			</div>
+	</div>
+</body>
+</html>
+ 
+
+
+</body>
+</html>
