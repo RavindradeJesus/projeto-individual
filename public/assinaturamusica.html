@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Configurações padrões do Visual Studio-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Referenciando a página de estilos-->
+    <link rel="stylesheet" href="assinatura.css">
+    <title>Assinatura</title>
+</head>
+
+<body>
+    <!--Definindo classes para referenciá-las na folha de estilo -->
+    <div class="container">
+        <!--Definindo classes para referenciá-las na folha de estilo -->
+        <div class="card2">
+            <h1> Assinatura Financeira </h1>
+
+           Informe sua renda mensal:
+           
+             <input type="number" id="iptrenda">
+            <br><br>
+            Informe o plano que deseja utilizar:
+            <select id="plano">
+             <option value="1">Individual</option>
+              <option value="2">Família</option>
+            </select>
+            
+            <br><br>
+        
+            <button class="btnCalcular" onclick="calcular()"> Calcular </button>
+            <br><br>
+        </div>
+    </div>
+   
+    <span id="mensagem" class="frase"></span>
+</body>
+
+</html>
+
+<script>
+
+    function calcular() {
+
+        var planos=plano.value;
+        var valor=12.9;
+        var melhora = ((12.9 * 10 )/16.9) * 12;
+        var renda =((iptrenda.value - 12.9) * 12) - (iptrenda.value - 16.9) * 12;
+        if (planos=="2") {
+           mensagem.innerHTML="Com o plano Família você paga " + valor + " obtendo uma economia em torno de "+( melhora.toFixed(2)) +" % por ano em comparação a valores de outros serviços de música economizando " + (renda.toFixed(2)) +  "  R$ por ano" ;   
+        }else {
+         mensagem.innerHTML= "Com o plano Individual você usa o serviço de modo gratuíto sem mexer na sua renda mensal de " + iptrenda.value;
+        }
+
+}
+
+
+</script>

@@ -2,26 +2,26 @@ var mysql = require("mysql2");
 var sql = require('mssql');
 
 // CONEXÃO DO SQL SERVER - AZURE (NUVEM)
-var sqlServerConfig = {
-    user: "grupo1-1cco",
-    password: "#GfgrupoGreentech",
-    database: "Greentech",
-    server: "grupo1-1cco.database.windows.net",
-    pool: {
-        max: 10,
-        min: 0,
-        idleTimeoutMillis: 30000
-    },
-    options: {
-        encrypt: true, // for azure
-    }
-}
+ //var sqlServerConfig = {
+  //   user: "grupo1-1cco",
+   // password: "#GfgrupoGreentech",
+   // database: "Greentech",
+   // server: "grupo1-1cco.database.windows.net",
+   // pool: {
+     //   max: 10,
+      //  min: 0,
+       // idleTimeoutMillis: 30000
+ //   },
+  //  options: {
+       // encrypt: true, // for azure
+   // }
+//}
 
 // CONEXÃO DO MYSQL WORKBENCH (LOCAL)
    var mySqlConfig = {
-    host: "root",
-    user: "ravialme",
-    database: "Imusic",
+    host: "localhost",
+    user: "root",
+    database: "Imusica",
     password: "#Gf03143756276",
  };
 

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/estilomusica.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <h1 class="titulo">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.UxqmdX-GFYLe63M3bHx48gHaMT&pid=Api&P=0&w=90&h=150" id="logo"> 
+                 IMusic</h1>
+
+            <ul class="navBar">
+                <li>
+                   <a href="index.html">Home</a> 
+                </li>
+                <li>
+                    <a href="assinaturamusica.html">
+                        Assinatura
+                    </a>
+                </li>
+                <li id="aqui">Login</li>
+                <li>
+                    <a href="cadastro.html">Cadastro</a>
+                </li>
+               
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="banner">
+        <div class="container">
+            <img src="https://www.radiomargherita.com/wp-content/uploads/2016/04/MUSICA.jpg" id="img1">
+            <div class="card">
+                <h1>Olá, seja bem vindo!</h1>
+                <h4>E-mail</h4>
+                <input id="email_input" placeholder="seuemail@exemplo.com">
+                <h4>Senha</h4>
+                <input type="password" id="senha_input" placeholder="******">
+                <button onclick="entrar()">Entrar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <p>
+                Feito por Ravindra Mandú
+                1º semestre CCO 
+                <br>
+                Contato para informações: (91)988506448
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+function entrar() {
+        // aguardar();
+
+        var emailVar = email_input.value;
+        var senhaVar = senha_input.value;
+
+        if (emailVar == "" || senhaVar == "") {
+            // cardErro.style.display = "block"
+            // mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
+            // finalizarAguardar();
+            return false;
+        }
+        else {
+            // setInterval(sumirMensagem, 5000)
+        }
+
+        console.log("FORM LOGIN: ", emailVar);
+        console.log("FORM SENHA: ", senhaVar);
+
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: emailVar,
+                senhaServer: senhaVar
+            })
+        }).then(function (resposta) {
+            console.log("ESTOU NO THEN DO entrar()!")
+
+            if (resposta.ok) {
+                console.log(resposta);
+
+                resposta.json().then(json => {
+                    console.log(json);
+                    console.log(JSON.stringify(json));
+
+                    sessionStorage.EMAIL_USUARIO = json.email;
+                    sessionStorage.NOME_USUARIO = json.nome;
+                    sessionStorage.ID_USUARIO = json.id;
+
+                    setTimeout(function () {
+                        window.location = "./dashboard/cards.html";
+                    }, 1000); // apenas para exibir o loading
+
+                });
+
+            } else {
+
+                console.log("Houve um erro ao tentar realizar o login!");
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                    // finalizarAguardar(texto);
+                });
+            }
+
+        }).catch(function (erro) {
+            console.log(erro);
+        })
+
+        return false;
+    }
+
+    // function sumirMensagem() {
+        // cardErro.style.display = "none"
+    // }
+
+
+</script>

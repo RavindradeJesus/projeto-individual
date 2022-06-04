@@ -61,22 +61,22 @@ function entrar(req, res) {
 
 }
 
-function cadastrarEmpresa(req, res) {
+function cadastrarMusica(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
-    var nomeEmpresa = req.body.nomeEmpresaServer;
-    var CNPJEmpresa = req.body.CNPJServer;
+    var nomeMusica= req.body.nomeMusicaServer;
+    var artistaMusica = req.body.artistaServer;
     
 
     // Faça as validações dos valores
-    if (nomeEmpresa == undefined) {
+    if (nomeMusica == undefined) {
         res.status(400).send("Seu nome está undefined!");
-    } else if (CNPJEmpresa == undefined) {
+    } else if (artistaMusica == undefined) {
         res.status(400).send("Seu email está undefined!");
     } else {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
 
-        usuarioModel.cadastrarEmpresa(nomeEmpresa, CNPJEmpresa)
+        usuarioModel.cadastrarMusica(nomeMusica, artistaMusica)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -94,11 +94,11 @@ function cadastrarEmpresa(req, res) {
     }
 }
 
-function cadastrarUsuario(req, res){
+function cadastrar(req, res){
     var nome = req.body.nomeServer;
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
-    var telefone = req.body.telefoneServer;
+   
 
     // Faça as validações dos valores
     if (nome == undefined) {
@@ -107,13 +107,10 @@ function cadastrarUsuario(req, res){
         res.status(400).send("Seu email está undefined!");
     } else if (senha == undefined) {
         res.status(400).send("Sua senha está undefined!");
-    } else if(telefone == undefined){
-        res.status(400).send("Seu telefone está undefined!");
-    } else {
-        
+   
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
 
-        usuarioModel.cadastrarUsuario(nome, email, senha, telefone)
+        usuarioModel.cadastrar(nome, email, senha)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -133,8 +130,7 @@ function cadastrarUsuario(req, res){
 
 module.exports = {
     entrar,
-    cadastrarEmpresa,
-    cadastrarUsuario,
+    cadastrar,
     listar,
     testar
 }

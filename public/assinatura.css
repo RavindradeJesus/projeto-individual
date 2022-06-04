@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300&family=Staatliches&display=swap');
+
+/*Definindo que todo o corpo do site irá ter a fonte Poppins e cor de fundo #81d381;*/
+body {
+
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-image:url(https://www.radiomargherita.com/wp-content/uploads/2016/04/MUSICA.jpg);
+    background-size: cover;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+  
+}
+
+
+
+
+.container {
+    margin-top: 80px;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: 130px;
+    border-radius: 20px;
+    align-items:center;
+    text-align: center;
+}
+
+
+.container .card2 {
+    background-color: rgb(175, 16, 223);
+    width: 600px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin: auto;
+    font-size: 15px;
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.card2 input{
+border-radius: 10px;
+font-size: 20px;
+}
+
+.card2 select{
+    border-radius: 10px;
+    font-size: 20px;
+    }
+
+.btnCalcular {
+    font-family: 'Times New Roman', Times, serif;
+    color: #1e1045;
+    border-color: #881bb0;
+    display: flex;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.frase{
+    
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color:white;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
