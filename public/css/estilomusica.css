@@ -2,6 +2,7 @@ body{
 margin: 0;
 background-color: rgb(0, 0, 0);
 font-family:'Times New Roman', Times, serif;
+
 }
 
 .header{
@@ -9,7 +10,9 @@ font-family:'Times New Roman', Times, serif;
     height: 15vh;
     display: flex;
     justify-content: center;
+    width: auto;
 }
+
 
 .container .titulo #logo{
     height: 50px;
@@ -19,9 +22,9 @@ font-family:'Times New Roman', Times, serif;
 .header .container{
     display: flex;
     align-items: center;
-    width: 85%;
-    height: 85%;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    justify-content:space-between;
 }
 
 .header ul #aqui {
@@ -31,51 +34,63 @@ font-family:'Times New Roman', Times, serif;
 ul {
     color: #59056a;
 }
-.header .container .titulo{
+.container .titulo {
     display: flex;
     align-items: center;
      color:rgb(103, 28, 150);
-     width: fit-content;
+     width: 400px;
      height: 100%;
      font-weight: 600;
+    margin-left: 20px;
+    
 
  }
 
  .navBar{
-   width: 300px;
+   width: 400px;
    padding: 0;
    list-style: none;
    display: flex;
    justify-content: space-evenly;
    align-items: center;
+   font-size: 22px;
  }
 
  .banner{
    color: rgb(181, 39, 241);
    display: flex;
-    height: 75vh;
+    height: 85vh;
     width: 100vw;
  }
 
  .banner #img1{
      height: 100%;
      width: 100%;
+     display: flex;
  }
+
+ 
 
  .banner .container{
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
- }
+    justify-content: flex-start;
+    align-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+ 
 
  .banner .container .frase{
      position: absolute;
      width: 100%;
-     font-size: 50px;
+     font-size: 60px;
      font-weight: 100;
      color: antiquewhite;
+     text-align: start;
+     margin-left: 80px;
 
  }
  .banner .container .card1{
@@ -109,49 +124,61 @@ ul {
      display: flex;
      background-color:hsl(280, 78%, 44%) ;
      width: 100%;
+     height: 60%;
  }
 
- .social .container{
-     display: flex;
-    height: 100%;
-    width: 100%;
+  .social .container{
+     height: 60%;
+    width: auto;
 }
 
  .box img{
-     width: 100px;
+     width: 180px;
+     height: 200px;
+     justify-content: baseline;
+     border: 3px solid black;
  }
 
- .social .container .boxes{
-     width: 100%;
-     height: 100%;
-      display: flex;
+ .box h4{
+     font-size: 25px;
+ }
+
+ .boxes{
+     width: 95%;
+     height: 90%;
+     display: flex;
      flex-direction: row;
-     justify-content: space-around; 
-    
+     justify-content: center; 
+    margin-top: 20px;
+    align-items: baseline;
+    flex: auto;
  }
 
  .social p {
-     text-align: center; 
+     text-align: center;
+     font-size: 28px; 
+     justify-content: space-evenly; 
   }
 
  .box{
      display: flex;
      align-items: center; 
-     border-radius: 10px;
+     border-radius: 100px;
       text-align: center;
-     justify-content: center;
-     flex-direction: row; 
+     justify-content: space-evenly;
+     flex-direction: column; 
+     
  }
-
  
 
   .footer{
      background-color: #483D8B;
      height:100px ;
-     width: auto;
+     width: 100%;
      color:#0e0e5d ;
      display: flex;
-     font-size: 14px;
+     font-size: 20px;
+     font-weight: 100;
      text-align: center;
      align-items: center;
      margin-bottom: auto;
@@ -171,11 +198,11 @@ ul {
 
  .banner .container .card{
      background-color: #952acb;
-     height: 400px;
+     height: 500px;
      width: 500px;
      display: flex;
      flex-direction: column;
-     color: #3930b0;
+     color: #010006;
      align-items: center;
      border-radius: 20px;
      margin-top: 20px;
@@ -197,11 +224,11 @@ ul {
  }
 
  .card h4{
-    font-size:18px ;
+    font-size:24px ;
  }
 
  .card input{
-  border:  #3930b0 solid 2px;
+  border:2px solid #010009;
   padding: 10px;
   text-align: center;
   border-radius: 10px;
@@ -210,7 +237,7 @@ ul {
  .card button{
      width: 100px;
      height: 50px;
-    background-color: #3930b0;
+    background-color: #01010c;
     margin-top: 20px;
     font: 650 20px monospace;
     border: 0;
@@ -222,11 +249,11 @@ ul {
 
  .banner .container .card1{
     background-color:  #952acb;
-    height: 500px;
+    height: 560px;
     width: 500px;
     display: flex;
     flex-direction: column;
-    color: #3930b0;
+    color: #000004;
     align-items: center;
     border-radius: 15px;
     margin-top: 10px;
@@ -238,11 +265,11 @@ ul {
  }
 
  .card1 h4{
-    font-size:13px ;
+    font-size:18px ;
  }
 
  .card1 input{
-  border:  #3930b0 solid 2px;
+  border:  2px solid #000005; 
   padding: 5px;
   text-align: center;
   border-radius: 10px;
@@ -251,7 +278,7 @@ ul {
  .card1 button{
      width: 120px;
      height: 50px;
-    background-color: #3930b0;
+    background-color: #010009;;
     margin-top: 20px;
     font: 650 20px monospace;
     border: 0;

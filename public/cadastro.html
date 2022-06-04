@@ -54,7 +54,7 @@
                 <h4>Confirme a senha</h4>
                 <input type="password" placeholder="*******" id="confirmacao_senha_input">
 
-                 <button onclick="fincar()">Cadastrar</button>
+                 <button onclick="cadastrar()">Cadastrar</button>
             </div>
         </div>
     </div>
@@ -76,7 +76,7 @@
 
  function cadastrar() {
         // aguardar();
-
+        console.log('funcionando')
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
         var nomeVar = nome_input.value;
@@ -109,9 +109,9 @@
                 senhaServer: senhaVar
             })
         }).then(function (resposta) {
-
+           
             console.log("resposta: ", resposta);
-
+               
             if (resposta.ok) {
                 // cardErro.style.display = "block";
 
