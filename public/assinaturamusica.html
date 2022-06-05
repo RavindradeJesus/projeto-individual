@@ -42,10 +42,10 @@
     function calcular() {
 
         var planos=plano.value;
-        var melhora = ((4 * 100 )/16.9) * 12;
+        var melhora = ((4 * 100 )/16.9) ;
         var renda =(16.9 - 12.9) * 12;
         if (planos=="2") {
-           mensagem.innerHTML="Com o plano Premium você paga 12.90 R$ por mês, obtendo uma economia em torno de "+( melhora.toFixed(2)) +" % por ano em comparação a valores de outros serviços de música, economizando " + (renda.toFixed(2)) +  "  R$ por ano" ;   
+           mensagem.innerHTML="Com o plano Premium você paga 12.90 R$ por mês, obtendo uma economia em torno de "+( melhora.toFixed(2)) +" % por mês em comparação a valores de outros serviços de música, economizando " + (renda.toFixed(2)) +  "  R$ por ano" ;   
         }else {
          mensagem.innerHTML= "Com o plano Individual você usa o serviço de modo gratuíto sem mexer na sua renda mensal de " + iptrenda.value;
         }
