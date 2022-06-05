@@ -5,7 +5,7 @@ body {
 
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
-    background-image:url(https://www.radiomargherita.com/wp-content/uploads/2016/04/MUSICA.jpg);
+    background-image:url(https://sfondo.info/i/original/8/c/e/49514.jpg);
     background-size: cover;
     height: fit-content;
     width: fit-content;
@@ -67,10 +67,11 @@ font-size: 20px;
     
     justify-content: center;
     align-items: center;
-    margin: auto;
-    color:white;
+    margin-left: 15px;
+    color:rgb(239, 233, 233);
     font-weight: 500;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 30px;
+    display: flex;
 }
 

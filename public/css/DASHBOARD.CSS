@@ -195,9 +195,9 @@ a{
   display: flex;
   justify-content: space-around;
   height: 55%;
-  padding-left: 6px;
+  padding-left: 7px;
   object-fit: cover;
-  width: 130%;
+  width: 120%;
   border: 2px solid rgb(113, 2, 153);
 }
 
