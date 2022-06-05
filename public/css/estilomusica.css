@@ -1,8 +1,18 @@
 body{
-margin: 0;
-background-color: rgb(0, 0, 0);
-font-family:'Times New Roman', Times, serif;
-
+    background-color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-between;
+    flex-direction: column;
+    height: auto;
+    width:105vw;
+    margin: 0;
+    margin-right: -17px;
+  
+    
 }
 
 .header{
@@ -47,25 +57,26 @@ ul {
  }
 
  .navBar{
-   width: 400px;
+   width: 350px;
    padding: 0;
    list-style: none;
    display: flex;
    justify-content: space-evenly;
    align-items: center;
    font-size: 22px;
+   margin-right: 100px;
  }
 
  .banner{
    color: rgb(181, 39, 241);
    display: flex;
-    height: 85vh;
+    height:auto;
     width: 100vw;
  }
 
  .banner #img1{
-     height: 100%;
-     width: 100%;
+     height: 85vh;
+     width: 235vh;
      display: flex;
  }
 
@@ -115,21 +126,22 @@ ul {
  
 
  .banner .container .frase span{
-    font-weight: 300px;
+    font-weight: 300;
     padding-top: 20px;
-    font-size: 70px;
+    font-size: 80px;
 }
 
  .social{
      display: flex;
      background-color:hsl(280, 78%, 44%) ;
      width: 100%;
-     height: 60%;
+     height: 65%;
  }
 
   .social .container{
      height: 60%;
     width: auto;
+    justify-items: center;
 }
 
  .box img{
@@ -183,6 +195,8 @@ ul {
      align-items: center;
      margin-bottom: auto;
      justify-content: center;
+     margin-right: -17px;
+
  } 
 
  .footer .container {
@@ -205,8 +219,8 @@ ul {
      color: #010006;
      align-items: center;
      border-radius: 20px;
-     margin-top: 20px;
-     margin-bottom: 60px;
+     margin-top: 30px;
+     margin-bottom: 400px;
  }
 
 
@@ -256,7 +270,7 @@ ul {
     color: #000004;
     align-items: center;
     border-radius: 15px;
-    margin-top: 10px;
+    margin-top: 14px;
     margin-bottom: 10px;
 }
 

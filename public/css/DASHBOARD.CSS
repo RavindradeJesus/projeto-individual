@@ -69,13 +69,13 @@ a{
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   height: 5vh;
-  margin-left: 3vh;
+  margin-left: 4vh;
   padding: 0.5vh;
   /* Falando que a box não pode mudar o tamanho, independente do padding ou da margin  = border-box*/
   box-sizing: border-box;
   /*Deixando a font em negrito */
   font-weight: 400;
- 
+  
 
   /* Colando uma transição, algo que era de um jeito e vai pra outro */
   /* Explicando a linha: Fazer tudos os atributos irem do 0 até x onde x são os valores que foram atribuidos
@@ -149,7 +149,7 @@ a{
     flex-direction: column;
     height: 15px;
     margin-top: 600px;
-    margin-left: 15vh;
+    margin-left: 8vh;
     box-sizing: border-box;
     color: blueviolet;
     font-family: 'Times New Roman', Times, serif;
@@ -167,6 +167,7 @@ a{
   margin-top: 40px;
  color: blueviolet;
  margin-top: 100px;
+ margin-left: 10px;
 }
 
 .container .titulos #organizar-titulo {
@@ -185,6 +186,7 @@ a{
   margin-bottom: 10px;
   margin-top: 20px;
   font-size: 20px;
+  border: 2px solid rgb(113, 2, 153);
 }
 
 .container .titulos .num-metrica {
@@ -196,7 +198,7 @@ a{
   padding-left: 6px;
   object-fit: cover;
   width: 130%;
-  
+  border: 2px solid rgb(113, 2, 153);
 }
 
 .container .titulos .num-metrica .num-metrica-green{
@@ -289,11 +291,12 @@ a{
   border: 0;
   height: 20vh;
   width: 40 px;
-  margin-top: 30vh;
+  margin-top: 35vh;
   object-fit: cover;
   margin-left: 68%;
   margin-bottom: 1px;
   display: flex;
+  
  
 }
 
@@ -385,7 +388,7 @@ a{
   flex-direction: column;
   height: 500px;
   border: 2px solid blueviolet;
-  width: 700px;
+  width: 600px;
   margin-left: 60px;
   border-radius: 10px;
   margin-bottom: 700px;
@@ -405,8 +408,10 @@ a{
   padding-bottom: 2px;
   border: 2px solid blueviolet;
   height: 30px;
-  width: 700px;
+  width: 600px;
   margin-left: 0px;
+  border-top: 0;
+  border-radius: 10px;
   
 }
 
@@ -415,7 +420,7 @@ a{
   border-bottom: 2px solid rgba(182, 182, 182, 0.63);
   height: 60%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   font-weight: 300;
  
   
@@ -440,7 +445,7 @@ a{
   padding-top: 10px;
   box-sizing: border-box;
   font-size: 20px;
-  
+ 
 }
 
 .div-metrica p{
@@ -507,6 +512,7 @@ a{
   justify-content: space-around;
   margin-bottom: 10px;
   margin-top: 9px;
+  border: 2px solid rgb(113, 2, 153);
 }
 
 .container .titulos-grafico .num-metrica {
@@ -516,7 +522,7 @@ a{
   justify-content: space-around;
   height: 65%;
   padding-left: 6px;
-  
+  border: 2px solid rgb(113, 2, 153);
 }
 
 .container .titulos-grafico .num-metrica .num-metrica-green{
@@ -600,7 +606,7 @@ a{
 
 .boxes-metrica-grafico {
 
-  height: 50vh;
+  height: 55vh;
   border: 2px solid blueviolet;
   width: 90vh;
   margin-top: 10px;
