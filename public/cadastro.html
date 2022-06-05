@@ -92,8 +92,9 @@
             // return false;
         }
         else {
-                 // setInterval(sumirMensagem, 5000)
-        
+            console.log('f')      
+       
+         // setInterval(sumirMensagem, 5000)
 
         // Enviando o valor da nova input
         fetch("/usuarios/cadastrar", {
@@ -109,8 +110,8 @@
                 senhaServer: senhaVar
             })
         }).then(function (resposta) {
-           
             console.log("resposta: ", resposta);
+           
                
             if (resposta.ok) {
                 // cardErro.style.display = "block";
@@ -131,7 +132,7 @@
             // finalizarAguardar();
         });
 
-        return false;
+     
     }
 }
 
